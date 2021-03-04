@@ -1,6 +1,7 @@
 import Initialization from '../initialization';
-import Item from '../interfaces/IItem';
+import {Item} from '../interfaces/ICard';
 import {IGame} from '../interfaces/IGame';
+import Round from '../round/round';
 
 class Game implements IGame {
   dataRenderUnits: Item[];
@@ -23,6 +24,11 @@ class Game implements IGame {
   startGame() {
     return this.dataRenderUnits;
   }
+
+  // startRound() {
+  //   const round = new Round({dataRenderUnits, activeTeam, });
+  //   round.realize();
+  // }
 
   getInfo() {
     return {

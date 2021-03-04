@@ -1,8 +1,8 @@
-import Item from '../../interfaces/IItem';
+import {ICard, Item} from '../../interfaces/ICard';
 
 
 interface IOpponentBehavior {
-  amount(data: Item[]) : Item[];
+  amount(data: number) : Item[];
 }
 
 export default IOpponentBehavior;

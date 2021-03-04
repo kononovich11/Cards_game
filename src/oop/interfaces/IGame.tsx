@@ -1,4 +1,4 @@
-import Item from './IItem';
+import {Item} from './ICard';
 
 export interface IGame {
   dataRenderUnits: Item[];

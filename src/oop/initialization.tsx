@@ -1,4 +1,5 @@
 import UnitFactory from './factories/unitFactory';
+import {Item} from '../oop/interfaces/ICard';
 
 
 const Initialization = () => {
@@ -7,7 +8,7 @@ const Initialization = () => {
 
   const generateUnits = (unitsTypes: string[]) => {
     const unitsFactory = new UnitFactory();
-    let renderUnits: any = [];
+    let renderUnits: any = []; //????
 
     for (let i = 0; i < 12; i++) {
       const randomIndex: number = Math.round(+Math.random().toFixed(1) * 8);
@@ -20,7 +21,6 @@ const Initialization = () => {
   }
 
   const generatedUnits = generateUnits(unitsTypes);
-  console.log(generatedUnits);
   return generatedUnits;
 }
 

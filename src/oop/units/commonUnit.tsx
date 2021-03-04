@@ -1,17 +1,17 @@
 import ICommonUnit from '../interfaces/ICommonUnit';
-import IHealthBehavior from '../interfaces/behaviors/IHealthBehavior';
-import contextActionBehavior from '../behaviors/behaviorActionStrategy/contextActionBehavior';
 
 class CommonUnit implements ICommonUnit {
   name: string;
   type: string;
   image: string;
+  initiative: number;
   // healthValue: IHealthBehavior;
 
-  constructor(name: string, type: string, image: string) {
+  constructor(name: string, type: string, image: string, initiative: number) {
     this.name = name;
     this.type = type;
     this.image = image;
+    this.initiative = initiative;
     // this.healthValue  = healthValue
   }
 
@@ -29,7 +29,6 @@ class CommonUnit implements ICommonUnit {
 
   realization(opponent: object[]) {
     console.log('realize current unit');
-    // console.log(new contextActionBehavior())
   }
 }
 

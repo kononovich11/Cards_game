@@ -18,5 +18,3 @@ class HealthBehavior implements IHealthBehavior{
 }
 
 export default HealthBehavior;
-
-//increaseValue

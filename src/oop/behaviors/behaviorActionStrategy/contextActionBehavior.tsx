@@ -1,6 +1,4 @@
 import IActionBahavior from './IActionBahavior';
-import Item from '../../interfaces/IItem';
-
 
 class ContextActionBahavior {
   private actionBehavior: IActionBahavior;
@@ -13,9 +11,8 @@ class ContextActionBahavior {
     this.actionBehavior = actionBehavior;
   }
 
-  public realizeActionBehavior(value: number, opponent: Item[]) {
-    console.log('context');
-    return this.actionBehavior.action(value);
+  public realizeActionBehavior(value: number, strategy: any) {
+    return this.actionBehavior.action(value, strategy);
   }
 }
 

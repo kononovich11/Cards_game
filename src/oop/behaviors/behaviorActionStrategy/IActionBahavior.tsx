@@ -1,7 +1,7 @@
-import ICommonUnit from '../../interfaces/ICommonUnit';
+import {Item} from '../../interfaces/ICard';
 
 interface IActionBahavior {
-  action(data: number): number; //doAlgorithm
+  action(data: number, strategy: any): Item[];
 }
 
 export default IActionBahavior;
